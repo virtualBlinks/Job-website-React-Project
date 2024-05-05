@@ -1,0 +1,46 @@
+{
+  "companysignup": [
+    {
+      "id": "81a7",
+      "companyEmail": "gazellehair@gmail.com",
+      "registrationNumber": "22222222",
+      "companyName": "Gazellehair",
+      "password": "Oladimeji5@",
+      "confirmPassword": "Oladimeji5@"
+    },
+    {
+      "id": "b000",
+      "companyEmail": "virtualblinks@gmail.com",
+      "registrationNumber": "11111111",
+      "companyName": "birtualblinks",
+      "password": "Victoria01@",
+      "confirmPassword": "Victoria01@"
+    }
+  ],
+  "personalsignup": [
+    {
+      "id": "68de",
+      "firstName": "samuel",
+      "lastName": "Oladimeji",
+      "email": "oladimejiabiola32@gmail.com",
+      "password": "Oladimeji5@",
+      "confirmPassword": "Oladimeji5@"
+    },
+    {
+      "id": "0660",
+      "firstName": "olufumbi",
+      "lastName": "oyebola",
+      "email": "oyebola@gmail.com",
+      "password": "Oladimeji5@",
+      "confirmPassword": "Oladimeji5@"
+    },
+    {
+      "id": "5e8e",
+      "firstName": "olufumbi",
+      "lastName": "oyebola",
+      "email": "oluwadorcas@gmail.com",
+      "password": "Oladimeji5@",
+      "confirmPassword": "Oladimeji5@"
+    }
+  ]
+}

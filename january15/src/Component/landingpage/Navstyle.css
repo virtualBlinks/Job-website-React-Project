@@ -1,0 +1,1225 @@
+/****Navbar*******/
+.abey {
+  color: rgb(214, 137, 137);
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 0px 15px rgb(118, 118, 118);
+  background-color: rgb(231, 222, 227);
+  position: fixed;
+  z-index: 10;
+}
+
+ul {
+  gap: 80px;
+  padding-top: 20px;
+  list-style: none;
+
+
+
+}
+
+ul li a {
+  list-style: none;
+  color: black;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+
+ul li a:hover {
+  color: rgb(124, 180, 127);
+}
+
+.navbarimg {
+  height: 70px;
+  margin-right: 100px;
+}
+
+.fff {
+  font-size: 34px;
+}
+
+/* .fffs{
+  text-decoration: none;
+  color: black;
+  background-color: black;
+} */
+/****Herocontent*******/
+
+.diva {
+  background: linear-gradient(to top,
+      rgb(225, 250, 213),
+      rgba(182, 182, 182, 0.336));
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.herohgtext {
+  width: 450px;
+  text-align: left;
+  font-size: 45px;
+  font-family: roboto;
+  margin-bottom: 30px;
+  /* background-color: black; */
+}
+
+.herosmtext {
+  width: 450px;
+  text-align: left;
+  font-weight: 300;
+  font-size: 30px;
+  font-family: roboto;
+}
+
+.herodiv {
+  padding: 150px 0px 0px 130px;
+}
+
+.heroimg {
+  padding-top: 130px;
+  padding-right: 120px;
+  height: 570px;
+}
+
+.btnn {
+  margin-top: 40px;
+  margin-left: 170px;
+  height: 55px;
+  width: 200px;
+}
+
+.searchholder {
+  position: absolute;
+  height: 60px;
+  width: 960px;
+  border: none;
+  background-color: rgba(197, 197, 197, 0.495);
+  border-radius: 40px;
+  margin-top: 50px;
+  align-items: center;
+  display: flex;
+  padding: 0px 20px 0px 20px;
+  gap: 20px;
+  box-shadow: 0px 0px 8px rgba(129, 129, 129, 0.543);
+}
+
+.searchholder:hover {
+  border: 1px solid yellowgreen;
+  box-shadow: 0px 0px 20px rgba(129, 129, 129, 0.34);
+}
+
+.searchholder input {
+  width: 960px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-radius: 40px;
+  font-size: 20px;
+}
+
+.searchholder i {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.388);
+}
+
+.label {
+  cursor: pointer;
+}
+
+.buttonhelp {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  bottom: 10px;
+  right: 20px;
+  border-radius: 100%;
+  border: none;
+  background-color: yellowgreen;
+  color: white;
+  transition: 2s;
+  box-shadow: 0px 0px 8px rgba(129, 129, 129, 0.543);
+}
+
+.buttonhelp:hover {
+  height: 90px;
+  width: 90px;
+  background-color: rgb(231, 222, 227);
+  color: red;
+  font-size: 24px;
+  border: 2px solid yellowgreen;
+}
+
+.helpdiv {
+  position: relative;
+  right: 20px;
+  bottom: 10px;
+  height: 180px;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+}
+
+.helpmessage {
+  position: absolute;
+  left: -30px;
+  height: 100px;
+  width: 250px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 10px 10px 0px 10px;
+  overflow-y: hidden;
+  outline: none;
+  /* display: none; */
+}
+
+/****Partnership*******/
+.partnerdiv {
+  height: 100vh;
+  background-color: black;
+}
+
+.partnerinnerdiv {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 4px solid yellowgreen;
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+}
+
+.partner {
+  /* background-color: brown; */
+  width: 670px;
+  position: absolute;
+  left: -250px;
+  transform: rotate(270deg);
+  top: 250px;
+  font-size: 100px;
+  color: white;
+  cursor: pointer;
+}
+
+.partnershiplogoholder {
+  position: absolute;
+  right: 100px;
+  height: 95vh;
+  width: 1000px;
+  border-radius: 50px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  top: 40px;
+  gap: 20px;
+  line-height: 30px;
+}
+
+.images {
+  height: 300px;
+  width: 300px;
+  cursor: pointer;
+}
+
+/****testimonia*******/
+
+.testimonialdiv {
+  height: 1300px;
+  width: 100%;
+  background-color: rgb(227, 242, 220);
+}
+
+#carouselExampleIndicators {
+  height: 600px;
+  width: 550px;
+  /* margin-top: 100px; */
+}
+
+.carous {
+  margin-top: 110px;
+  margin-left: 130px;
+  height: 430px;
+  width: 300px;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.carous:hover {
+  box-shadow: 0px 0px 30px rgba(104, 104, 104, 0.447);
+}
+
+#slider {
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  gap: 10px;
+  background-color: yellowgreen;
+}
+
+.zz {
+  font-size: 35px;
+  font-weight: bolder;
+  color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carbackimg {
+  display: flex;
+  justify-content: center;
+  background-image: url(./Frame\ 207.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+}
+
+.Client-Testimonials {
+  padding-top: 70px;
+}
+
+.awarddiv {
+  gap: 100px;
+  position: relative;
+}
+
+.awardholder {
+  margin-top: 100px;
+  padding-top: 20px;
+  background-color: aliceblue;
+  height: 270px;
+  width: 250px;
+  transition: all 1s ease-in-out;
+}
+
+.awardholder:hover {
+  box-shadow: 0px 0px 30px 10px rgba(231, 222, 227, 0.605);
+  border-radius: 10px;
+}
+
+.awardholder img {
+  margin-top: 10px;
+  margin-left: 78px;
+  height: 90px;
+}
+
+.awardholder p {
+  text-align: center;
+  font-size: 16px;
+  width: 240px;
+  padding: 15px 10px 0px 25px;
+}
+
+/* ***********fottoer*********8 */
+
+.logofooter {
+  display: absolute;
+  margin-top: 50px;
+  height: 70px;
+  margin-left: 700px;
+}
+
+.footercontent {
+  margin-top: 60px;
+  /* background-color: blueviolet; */
+}
+
+.footerblock {
+  position: absolute;
+  right: 0px;
+  top: -60px;
+  height: 200px;
+  width: 100px;
+  background-color: rgba(128, 128, 128, 0.178);
+}
+
+.design {
+  justify-content: center;
+  gap: 350px;
+}
+
+.dotteddiv {
+
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.dotted,
+.dottedm {
+  height: 10px;
+  width: 10px;
+  border-radius: 100px;
+  background-color: rgba(186, 186, 186, 0.292);
+}
+
+.dottedm {
+  border-radius: 20px 10px 10px;
+  background-color: transparent;
+}
+
+.sitemapdiv {
+  text-align: left;
+
+}
+
+.sitemapdiv p {
+  font-weight: 550;
+  color: rgb(229, 229, 229);
+}
+
+.sitemapdiv ul {
+  margin-left: -30px;
+  margin-top: -20px;
+}
+
+.sitemapdiv li {
+  color: rgb(176, 176, 176);
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.headofficediv {
+  width: 350px;
+  text-align: left;
+}
+
+.headofficediv p {
+  font-weight: 550;
+  color: rgb(229, 229, 229);
+}
+
+.headofficediv h5 {
+  color: rgb(176, 176, 176);
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.linediv {
+  width: 110px;
+}
+
+.headofficediv hr {
+  border: 1px solid rgb(255, 255, 255);
+  margin-top: 2px;
+}
+
+.socialsdiv {
+  width: 300px;
+  text-align: left;
+}
+
+.socialsdiv p {
+  font-weight: 550;
+  color: rgb(229, 229, 229);
+}
+
+.socialslogo i {
+  color: rgb(176, 176, 176);
+  font-size: 27px;
+  transition: all 1S linear;
+}
+
+.socialslogo i:hover {
+  color: yellowgreen;
+}
+
+.newletterdiv {
+  margin-top: 30px;
+  width: 300px;
+  text-align: left;
+}
+
+.emailaddress {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(176, 176, 176);
+  font-size: 16px;
+
+}
+
+.newletterdiv hr {
+  border: 1px solid rgb(255, 255, 255);
+  margin-top: 2px;
+}
+
+.hresource {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 1020px;
+  color: rgb(176, 176, 176);
+
+}
+
+.hresource hr {
+  border: 1px solid rgb(255, 255, 255);
+  margin-top: 2px;
+}
+
+/* ***************aboutpage****************** */
+.divab {
+
+  padding-top: 200px;
+  background: linear-gradient(to top,
+      rgb(225, 250, 213),
+      rgba(182, 182, 182, 0.336));
+  height: 750px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.imgholder {
+  text-align: center;
+  border-radius: 20px;
+  height: max-content;
+  width: 400px;
+  padding-bottom: 10px;
+
+  padding-top: 40px;
+
+  backdrop-filter: blur(50px);
+  background-color: rgba(234, 252, 226, 0.621);
+  box-shadow: 0px 0px 10px 10px rgba(58, 58, 58, 0.103) inset;
+}
+
+.imgholder:hover {
+  box-shadow: 0px 0px 5px 5px rgba(58, 58, 58, 0.103);
+  border: 0.5px solid rgba(0, 0, 0, 0.329);
+
+
+
+}
+
+
+.imgceo {
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+  transform: scaleX(-1);
+  margin-bottom: 10px;
+}
+
+.imgholder h5 {
+  font-size: large;
+}
+
+.pdiv {
+  background-color: rgb(226, 248, 215);
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.innerpdiv {
+  width: 1000px;
+  text-align: center;
+  background-color: aliceblue;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  transition: 1s;
+  border-radius: 10px;
+}
+
+.innerpdiv:hover {
+  background-color: rgb(231, 222, 227);
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.121) inset;
+  border: 2px solid white;
+}
+
+.pdiv p {
+  font-size: 26px;
+  font-weight: 600;
+  /* padding-top: 40px; */
+
+}
+
+.innerpdiv li span {
+  font-size: 18px;
+  font-weight: 490;
+}
+
+.pdiv span {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.valuelist {
+  list-style: circle;
+  line-height: 50px;
+}
+
+/* ***********signupdiv************/
+.signupdivmain {
+  position: relative;
+  height: 100vh;
+  background-color: white;
+  width: 100%;
+}
+
+.signdiv {
+  position: absolute;
+  height: 85vh;
+  width: 100%;
+  background-color: rgba(124, 180, 127, 0.849);
+
+}
+
+.signimg {
+  margin-left: 50px;
+  height: 90px;
+}
+
+.categorydiv {
+  display: flex;
+  justify-content: space-around;
+  gap: 300px;
+}
+
+.creatcategory {
+  height: 150px;
+  line-height: 80px;
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  width: 700px;
+}
+
+.creatcategory h2 {
+  font-size: 45px;
+  width: 600px;
+}
+
+.creatcategory a {
+  text-decoration: none;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+
+}
+
+.linksdiv {
+  position: absolute;
+  height: fit-content;
+  left: 150px;
+}
+
+.or {
+  border-radius: 40px;
+  padding: 8px 8px;
+  color: rgb(176, 176, 176);
+  background-color: rgba(0, 0, 0, 0.863);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+.creatcategory a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #E7DEE3;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.creatcategory a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.signupcontent {
+  height: 550px;
+
+  padding-top: 30px;
+  border-radius: 10px;
+  position: absolute;
+  right: 150px;
+  bottom: 0px;
+}
+
+.create {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  color: white;
+}
+
+.signupcontent input {
+  width: 420px;
+  height: 50px;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 20px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  /* background: linear-gradient(to top, rgba(241, 241, 241, 0.438), transparent); */
+  border: none;
+  /* box-shadow: 0px 0px 10px rgba(77, 76, 76, 0.45); */
+  backdrop-filter: blur(30px);
+  color: rgb(51, 51, 51);
+  outline: none;
+}
+
+/* .inputcover {
+  line-height: 30px;
+} */
+
+.already {
+  color: rgba(255, 0, 0, 0.82);
+  font-size: 10px;
+  text-align: right;
+  position: absolute;
+  right: 80px;
+  bottom: 95px;
+}
+
+.signupbut {
+  font-size: 14px;
+  background-color: rgba(231, 222, 227, 0.872);
+  padding: 12px 50px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: rgb(67, 67, 67);
+  text-decoration: none;
+  position: absolute;
+  box-shadow: 0px 0px 20px 5px rgba(91, 91, 91, 0.212);
+  bottom: 30px;
+  right: 206px;
+  border: none;
+}
+
+.gandf {
+  position: absolute;
+  bottom: -68px;
+  left: 80px;
+}
+
+.gandf p {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+}
+
+.gf {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+.gf a {
+  width: 190px;
+  height: 50px;
+  font-size: 28px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: rgb(219, 219, 219);
+  background: linear-gradient(to top, rgba(30, 30, 30, 0.349), transparent);
+  box-shadow: 0px 0px 10px rgba(77, 76, 76, 0.45);
+}
+
+.uuu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.imagesvg {
+  height: 200px;
+  transform: scaleX(-1);
+}
+
+.backpersonal {
+  background-color: rgba(153, 205, 50, 0.05);
+}
+
+/* *****************signin************* */
+.signdivmain {
+  position: relative;
+  height: 80vh;
+  background-color: white;
+  width: 100%;
+  overflow: none;
+}
+
+.signindiv {
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  background-color: rgba(124, 180, 127, 0.849);
+}
+
+.signincontent {
+  padding-top: 40px;
+  width: 420px;
+  box-shadow: 0px 0px 30px 10px rgba(49, 49, 49, 0.107);
+  height: 490px;
+  border-radius: 10px;
+  position: absolute;
+  right: 150px;
+  bottom: 85px;
+
+}
+
+.create2 {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.signincontent input {
+  width: 420px;
+  height: 55px;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 20px;
+  border-radius: 10px;
+  background: linear-gradient(to top, rgba(144, 191, 147, 0.292), transparent);
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.128);
+  backdrop-filter: blur(30px);
+}
+
+.linksholder {
+  margin-top: 23px;
+}
+
+.forgot {
+  color: rgba(255, 0, 0, 0.82);
+  font-size: 12px;
+  text-align: right;
+  position: absolute;
+  right: 60px;
+}
+
+.back {
+  color: #131313;
+  font-size: 14px;
+  text-align: left;
+  position: absolute;
+  left: 60px;
+}
+
+.signinbut {
+  font-size: 14px;
+  background-color: rgb(144, 191, 147);
+  padding: 12px 45px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: rgb(67, 67, 67);
+  text-decoration: none;
+  position: absolute;
+  box-shadow: 0px 0px 20px 5px rgba(91, 91, 91, 0.212);
+  bottom: 40px;
+  right: 206px;
+}
+
+.gandff {
+  position: absolute;
+  left: 80px;
+  bottom: -65px;
+  /* background-color: blue; */
+}
+
+.gandff p {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.linksdiv2 {
+  position: absolute;
+  height: fit-content;
+  left: 150px;
+}
+
+.linksdiv2 a {
+  color: black;
+}
+
+.linksdiv2 a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #8f0d55;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.linksdiv2 a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.smally {
+  color: red;
+  position: absolute;
+  font-size: 14px;
+}
+
+/* ********onboarding********* */
+
+.profile {
+  width: 200px;
+  /* background-color: #8f0d55; */
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.profile span {
+  font-size: 20px;
+}
+
+.pimg {
+  font-size: 30px;
+}
+
+.nav2 {
+  width: 100%;
+  height: 90px;
+  box-shadow: 0px 0px 15px rgb(118, 118, 118);
+  background-color: rgb(124, 180, 127);
+  position: fixed;
+  z-index: 10;
+
+
+
+
+
+  .navbarimg {
+    height: 70px;
+    margin-right: 100px;
+  }
+
+}
+
+.nav2 ul li a:hover {
+  color: rgb(151, 11, 88);
+  text-decoration: 2px underline;
+}
+
+.profiledrop {
+  height: 380px;
+  width: 200px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 90px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.103);
+
+}
+
+
+.h5div {
+  background-color: #131313;
+  height: 60px;
+  width: 200px;
+  padding-top: 10px;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+  overflow-x: auto;
+}
+
+.h5div::-webkit-scrollbar{
+  height:8px;
+  background-color: rgb(124, 180, 127);
+}
+.h5div::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 40px;
+}
+
+.h5div h5 {
+  color: white;
+  font-size: 15px;
+}
+
+.tbut {
+  border: none;
+  background-color: transparent;
+ 
+}
+
+.menus {
+  text-align: left;
+  color: rgb(0, 0, 0);
+  line-height: 45px;
+  font-size: 18px;
+  padding-left: 0px;
+
+  hr {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    height: 3px;
+    background-color: black;
+
+  }
+
+  a {
+    padding-left: 15px;
+    display: flex;
+    gap: 25px;
+  }
+}
+
+/* *********oboardingcontent************ */
+
+.content {
+  height: 1000px;
+  width: 100%;
+  top: 90px;
+  position: relative;
+}
+
+.contentsearch {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 430px;
+  height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.153);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.112);
+  background-color: transparent;
+  padding-left: 20px;
+  margin-left: 100px;
+  top: 20px;
+  border-radius: 8px;
+
+  i {
+    color: rgb(64, 64, 64);
+  }
+
+  input {
+    height: 45px;
+    width: 380px;
+    outline: none;
+    border: none;
+  }
+}
+.contentinner{
+  position: relative;
+  top: 110px;
+  display: flex;
+  width: 100%;
+  height: 900px;
+  justify-content: space-between;
+  padding: 0px 100px 0px 100px;
+}
+.jobcategories{
+  
+  width: 300px;
+  height:850px;
+  padding-top: 20px;
+  padding-left: 20px;
+  left: 100px;  
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.279);
+  border-radius: 10px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+
+  h6{
+    margin-top: 20px;
+
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+.slmain{
+  width: 700px;
+  height: 350px;
+  border: none;
+}
+.sl{
+  border-radius: 20px;
+  height: 359px;
+    
+}
+.slm{
+  border-radius: 20px;
+  border: 5px solid rgb(203, 159, 192);
+  box-shadow: 0px 0px 5px 2px rgb(144,191,147);
+
+
+
+}
+.sll{
+  border-radius:20px ;
+}
+.jobcategoriess{
+  height: 700px;
+  width: 300px;
+ 
+  .one{
+    height: 255px;
+  }
+  .two{
+    height: 100px;
+    padding: 20px 0px 20px 130px;
+  }
+  .three{
+    height: 330px;
+  }
+}
+
+.jobposting{
+  position: absolute;
+  width: 41%;
+  height: 700px;
+  background-color: transparent;
+  box-shadow: 0px 0px 5px 2px rgb(167, 168, 167);
+  left: 497px;
+  top: 400px;
+}
+
+.footerjobpost{
+  width: 300px;
+  position: relative;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  margin-top: 200px;
+  margin-left: 100px;
+
+  
+  .ftarrow{
+    height: 60px;
+    margin-left: 85px;
+   }
+
+   .textfooter{
+    position: absolute;
+    bottom: 20px;
+    margin-left: 60px;
+   }
+   .ftback{
+    height: 85px;
+    margin-left: 20px;
+    
+   }
+   .textfooter:hover{
+       text-decoration: 2px black underline;
+   }
+}
+.socials img{
+  height: 20px;
+}
+/* *************postjob******** */
+
+.postdiv{
+  margin-bottom: 100px;
+  position: relative;
+  height: 280px;
+  width: 480px;
+  border-radius: 20px;
+  background-color: transparent;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.176);
+}
+
+.postjobbutton{
+  height: 40px;
+  width: 120px;
+  border: none;
+  background-color: #8f0d55;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  color: white;
+  border-radius: 10px;
+}
+.fileinput{
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  width: 400px;
+  background-color: yellow;
+}
+.Jobdetails{
+  position: relative;
+  width: 500px;
+  height: 600px;
+  margin: auto;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.135);
+}
+.Jobdetails h3 {
+  position: absolute;
+  left: 50px;
+  top: 30px;
+}
+.Jobdetails h5 {
+  position: absolute;
+  left: 50px;
+  top: 80px;
+}
+.imgpost{
+  height: 450px;
+  width:400px;
+   position:absolute;
+    left:50px;
+     bottom:20px;
+     border-radius: 10px;
+}
+
+

@@ -40,16 +40,16 @@ const Footer = () => {
         <div className="socialsdiv">
           <p>Socials</p>
           <div className="socialslogo d-flex gap-5">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter-x"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-linkedin"></i>
+            <i className="bi bi-facebook"></i>
+            <i className="bi bi-twitter-x"></i>
+            <i className="bi bi-instagram"></i>
+            <i className="bi bi-linkedin"></i>
           </div>
           <div className="newletterdiv">
             <p>News letter</p>
             <div className="emailaddress">
               <span>Enter your email address</span>
-              <i class="bi bi-envelope"></i>
+              <i className="bi bi-envelope"></i>
             </div>
             <hr />
           </div>

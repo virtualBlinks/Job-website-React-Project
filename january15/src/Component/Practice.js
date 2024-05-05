@@ -5,12 +5,12 @@ const Practice = () => {
    const [changeUser, setChangeUser] = useState("")
    const [data, setdata] = useState([])
    const [onLoad, setonLoad] = useState(false)
-   let mystyle ={height:"1800px", backgroundColor:"green", width:"100%"}
+   let mystyle ={height:"1800px", backgroundColor:"green", width:"100%", marginTop:"100px"}
    const changeName = ()=>{
      setUserName(changeUser)
    }
    const getData = ()=>{
-axios.get("https://api.github.com/users").then((res)=>{
+     axios.get("https://api.github.com/users").then((res)=>{
     // console.log(res.data);
     setonLoad(true)
     setdata(res.data)
