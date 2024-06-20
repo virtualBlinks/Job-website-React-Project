@@ -1122,13 +1122,16 @@ ul li a:hover {
   }
 }
 
-.jobposting{
+.jobposting {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   position: absolute;
-  width: 41%;
-  height: 700px;
+  width: max-content;
+  height: max-content;
   background-color: transparent;
-  box-shadow: 0px 0px 5px 2px rgb(167, 168, 167);
-  left: 497px;
+  box-shadow: 0px 0px 5px 2px rgba(167, 168, 167, 0.187);
+  left: 600px;
   top: 400px;
 }
 
@@ -1171,11 +1174,17 @@ ul li a:hover {
 .postdiv{
   margin-bottom: 100px;
   position: relative;
-  height: 280px;
+  height: 330px;
   width: 480px;
   border-radius: 20px;
   background-color: transparent;
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.176);
+  padding: 30px 50px;
+}
+.errormess{
+  position: absolute;
+  bottom: 50px;
+  color: red;
 }
 
 .postjobbutton{
@@ -1191,35 +1200,117 @@ ul li a:hover {
 }
 .fileinput{
   position: absolute;
-  top: 50px;
-  left: 40px;
-  width: 400px;
-  background-color: yellow;
+  top: 200px;
+  width: 350px;
 }
-.Jobdetails{
+
+.jobcarddiv{
+  margin: auto;
+  height: max-content;
+  width: max-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color:transparent;
+  box-shadow: 0px 0px 5px 2px rgba(200, 200, 200, 0.057);
+}
+.Jobdetails{  
   position: relative;
   width: 500px;
-  height: 600px;
-  margin: auto;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.135);
+  height: 700px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 2px rgba(167, 168, 167, 0.221);
+
+  
 }
-.Jobdetails h3 {
+.title {
   position: absolute;
-  left: 50px;
+  left: 25px;
   top: 30px;
-}
-.Jobdetails h5 {
+ }
+ .title span{
+  font-weight: 400;
+ }
+.descript{
   position: absolute;
-  left: 50px;
+  left: 25px;
   top: 80px;
+  width: 480px; 
 }
+.descript span{
+  font-weight: 400;
+ }
 .imgpost{
-  height: 450px;
-  width:400px;
+  height: 400px;
+  width:450px;
    position:absolute;
-    left:50px;
-     bottom:20px;
-     border-radius: 10px;
+    left:28px;
+     bottom:80px;
+     border-radius: 2px;
+}
+.content1[contentEditable="true"]:empty::before {
+  content: "JobTitle";
+  color: hsl(0, 0%, 60%);
+}
+.content2{
+  height: 80px;
+  overflow-y: scroll;
+  outline: none;
+
+}
+.content2::-webkit-scrollbar{
+  width:8px;
+  background-color: rgba(124, 180, 127, 0.479);
+}
+.content2::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+.content2[contentEditable="true"]:empty::before {
+  content: "Job Description";
+  color: hsl(0, 0%, 60%);
+}
+
+.detailsbutton {
+  width: 498px;
+  height: 50px;
+  color: grey;
+  border: none;
+  position: absolute;
+  top: 150px;
+  left: 2px;
+  border-radius: 5px;
+}
+.detailsbutton:hover{
+  box-shadow: 0px 0px 10px 2px  rgba(0, 0, 0, 0.192);
+}
+.likesharcommentdiv{
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  gap: 28px;
+  padding: 0px 30px 10px 30px;
+
+}
+.likesharcommentdiv button{
+  position: relative;
+  border: none;
+  height: 45px;
+  width: 130px;
+  border-radius: 5px;
+}
+.likesharcommentdiv button:hover{
+  box-shadow: 0px 0px 10px 2px  rgba(0, 0, 0, 0.192);
+}
+
+.suppost{
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
 
 

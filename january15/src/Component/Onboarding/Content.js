@@ -1,4 +1,5 @@
 import React from 'react'
+import Postjobscard from '../postjob/Postjobscard'
 
 function Content() {
     return (
@@ -70,7 +71,9 @@ function Content() {
                             </div>
                         </div>
                     </div>
-                    <div className='jobposting'></div>
+                    <div className='jobposting'>
+                        <Postjobscard/>
+                    </div>
                     <div className="jobcategoriess">
                         <img className='three' src="../sliderimgs/jobflags (3).png" alt="" />
                         <img className='two' src="../sliderimgs/jobflags (2).png" alt="" />

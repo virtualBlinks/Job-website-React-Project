@@ -1,68 +1,60 @@
-import React, {useEffect, useState} from 'react'
-import axios from 'axios'
+import React, { useState } from 'react';
+import axios from 'axios';
+import Postjobscard from './Postjobscard';
 
-
-const Posts = () =>{
-    const [data, setdata] = useState ([])
-    const [jobtitle, setjobtitle] = useState("")
-    const [jobdescription, setjobdescription] = useState("")
-    const [image, setImage] = useState ("")
-
-     useEffect(()=>{
-        axios.get("http://localhost:2024/jobfield")
-        .then((res)=>{
-            console.log(res.data);
-            setdata(res.data)
-        }).catch((err)=>{
-            console.log(err);
-        })
-     },[])
+const Posts = () => {
+    const [jobtitle, setjobtitle] = useState("");
+    const [jobdescription, setjobdescription] = useState("");
+    const [image, setImage] = useState("");
+    const [errormess, seterrormess] = useState("");
 
     const post = () => {
-        axios.post("http://localhost:2024/jobfield",{jobtitle, jobdescription, image})
-        .then((res)=>{
-            console.log(res);
-        }).catch((err)=>{
-            console.log(err);
-        })
+        if (!jobtitle || !jobdescription || !image) {
+            seterrormess("Please fill in all fields");
+            return;
+        } else {
+            seterrormess("");
         }
 
-        const choosefile = (e) =>{
-        const file = e.target.files[0]
+        axios.post("http://localhost:2025/jobfield", { jobtitle, jobdescription, image })
+            .then((res) => {
+                console.log(res);
+                document.querySelector('.content1').innerText = "";
+                document.querySelector('.content2').innerText = "";
+                document.getElementById('fileInput').value = "";
+                window.location.reload()
+                
+            })
+            .catch((err) => {
+                console.error(err);
+                seterrormess("An error occurred while posting job.");
+            });
+    };
+
+    const choosefile = (e) => {
+        const file = e.target.files[0];
         console.log(file);
-        const reader = new FileReader()
-        reader.readAsDataURL(file)
-        reader.onload = ()=>{
-            setImage(reader.result)
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+            setImage(reader.result);
             console.log(reader.result);
-        }
-        }
-  return (
-    <>
-    <h1 className='d-flex justify-content-center mx-auto'>Post</h1>
-    <input className='form-control w-25 mx-auto mt-3' onChange={(e) => setjobtitle(e.target.value)} type='text' placeholder='JobTitle'/>
-    <input className='form-control w-25 mb-3 mx-auto mt-3' onChange={(e) => setjobdescription(e.target.value)}type='text' placeholder='Job Description'/>
-   <div className='postdiv mx-auto' >
-   <input className='fileinput' onChange={(e) => choosefile(e)}type='file'/>
-    <button onClick={post} className='postjobbutton'>Post</button>
-  
-   </div>
-   
+        };
+    };
 
-    {
-        data.map((el, index) =>(
-            <div key={index}>
-            <div  className="Jobdetails" >
-               <h3>{el.jobtitle}</h3>
-               <h5>{el.jobdescription}</h5>
-               <img className='imgpost' src={el.image} alt=''  />
-
+    return (
+        <>
+            <h1 className='d-flex justify-content-center mx-auto'>Post</h1>
+            <div className='postdiv mx-auto'>
+                <div className='content1 form-control mb-3' contentEditable={true} onInput={(e) => setjobtitle(e.target.innerText)} style={{ textAlign: 'top' }}></div>
+                <div className='content2 form-control mb-3' contentEditable={true} onInput={(e) => setjobdescription(e.target.innerText)} style={{ textAlign: 'top' }}></div>
+                <input id="fileInput" className='fileinput' onChange={(e) => choosefile(e)} type='file' />
+                <small className='errormess'>{errormess}</small>
+                <button onClick={post} className='postjobbutton'>Post</button>
             </div>
-            </div>
-        ))
-    }
-      </>
-  )
-}
+            <Postjobscard />
+        </>
+    );
+};
 
-export default Posts
+export default Posts;
